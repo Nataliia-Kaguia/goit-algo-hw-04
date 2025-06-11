@@ -12,7 +12,7 @@ def total_salary(path):
                 parts = line.strip().split(',')
                 if len(parts) == 2:
                     try:
-                        salary = int(parts[1])
+                        salary = float(parts[1])
                         total += salary
                         count += 1
                     except ValueError:
